@@ -1,0 +1,11 @@
+version: '1.0'
+
+services:
+  ejjenkins1:
+    container_name: ejjenkins1
+    image: ejjenkins1:1.0
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 9090:80
